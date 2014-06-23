@@ -136,6 +136,12 @@
  					},
  				]
  			},
+ 			// git pull
+ 			{
+ 				title: 'Pull',
+ 				description: 'Get commits and branches from remote repository',
+ 				command: 'git pull',
+ 			},
  		];
 	});
 
