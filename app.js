@@ -80,6 +80,26 @@
  					}
  				]
  			},
+ 			// git add
+ 			{
+ 				title: 'Add',
+ 				description: 'Add files to stage',
+ 				command: 'git add',
+ 				commands: [
+ 					{
+ 						command: 'git add file_name',
+ 						description: 'add file_name to stage'
+ 					},
+ 					{
+ 						command: 'git add directory',
+ 						description: "add directory and all it's files/diretories to stage"
+ 					},
+ 					{
+ 						command: 'git add .',
+ 						description: 'add all changed files/directories to stage'
+ 					}
+ 				]
+ 			},
  		];
 	});
 
