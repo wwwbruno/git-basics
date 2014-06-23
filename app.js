@@ -116,6 +116,26 @@
  					},
  				]
  			},
+ 			// git push
+ 			{
+ 				title: 'Push',
+ 				description: 'Send commits to remote repository',
+ 				command: 'git push',
+ 				commands: [
+ 					{
+ 						command: 'git push',
+ 						description: "send all commits from all tracking branches to the default remote repository"
+ 					},
+ 					{
+ 						command: 'git push origin master',
+ 						description: "send all commits to the 'origin' remote in the 'master' branch"
+ 					},
+ 					{
+ 						command: 'git push -u origin master',
+ 						description: "send all commits to the 'origin' remote in the 'master' branch and set it as default"
+ 					},
+ 				]
+ 			},
  		];
 	});
 
