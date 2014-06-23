@@ -100,6 +100,22 @@
  					}
  				]
  			},
+ 			// git checkout
+ 			{
+ 				title: 'Checkout',
+ 				description: 'work with files history and switch branches',
+ 				command: 'git checkout',
+ 				commands: [
+ 					{
+ 						command: 'git checkout -- file_name',
+ 						description: "discart file's change on stage"
+ 					},
+ 					{
+ 						command: 'git checkout branch_name',
+ 						description: "switch to branch"
+ 					},
+ 				]
+ 			},
  		];
 	});
 
