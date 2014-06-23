@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Bruno Almeida @wwwbruno" />
+        <title>Git Basics</title>
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+            <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.min.js"></script>
+        <script src="app.js"></script>
+    </head>
+    <body ng-app="gitBasics">
+
+        <div class="container" ng-controller="CommandController as command">
+
+            <div class="page-header">
+                <h1>{{ command.title }}</h1>
+                <p class="lead">{{ command.subtitle }}</p>
+            </div>
+
+            <div ng-repeat="basic in command.basics">
+
+                <h2>{{ basic.title }}</h2>
+
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <blockquote>
+                            <p>{{ basic.description }}<br>
+                            <kbd>{{ basic.command }}</kbd></p>
+                        </blockquote>
+                    </div>
+                    <div class="panel-footer" ng-show="basic.commands.length">
+                        <ul>
+                            <li ng-repeat="cmd in basic.commands">
+                                <kbd>{{ cmd.command }}</kbd> <span class="text-muted">{{ cmd.description }}</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+    </body>
+</html>
