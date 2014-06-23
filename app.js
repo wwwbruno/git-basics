@@ -37,7 +37,7 @@
  			// git status
  			{
  				title: 'Status',
- 				description: 'Show the modified files and file on stage',
+ 				description: 'Show the modified files and file on stage and the actual branch',
  				command: 'git status'
  			},
  			// git diff
