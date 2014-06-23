@@ -25,7 +25,7 @@
                 <p class="lead">{{ command.subtitle }}</p>
             </div>
 
-            <div ng-repeat="basic in command.basics">
+            <div ng-repeat="basic in command.basics | orderBy:'title':reverse">
 
                 <h2>{{ basic.title }}</h2>
 
