@@ -114,6 +114,10 @@
  						command: 'git checkout branch_name',
  						description: "switch to branch"
  					},
+ 					{
+ 						command: 'git checkout -b new-branch',
+ 						description: "create and switch to new-branch"
+ 					},
  				]
  			},
  			// git push
@@ -145,12 +149,20 @@
  			// git branch
  			{
  				title: 'Branch',
- 				description: 'Create and list branches',
+ 				description: 'Create, list and delete branches',
  				command: 'git branch',
  				commands: [
  					{
  						command: 'git branch --list',
  						description: "list all branches"
+ 					},
+ 					{
+ 						command: 'git branch new-branch',
+ 						description: "create a branch named new-branch"
+ 					},
+ 					{
+ 						command: 'git branch -d new-branch',
+ 						description: "delete the new-branch"
  					},
  				]
  			},
