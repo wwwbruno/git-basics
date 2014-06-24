@@ -154,6 +154,30 @@
  					},
  				]
  			},
+ 			// git clone
+ 			{
+ 				title: 'Clone',
+ 				description: 'Clone a remote repository',
+ 				command: 'git clone',
+ 				commands: [
+ 					{
+ 						command: 'git clone git@github.com:wwwbruno/git-basics.git',
+ 						description: "clone this resposiory via ssh in a directory git-basics (need ssh key configured)"
+ 					},
+ 					{
+ 						command: 'git clone git@github.com:wwwbruno/git-basics.git new-directory',
+ 						description: "clone this resposiory via ssh in a directory new-directory (need ssh key configured)"
+ 					},
+ 					{
+ 						command: 'git clone https://github.com/wwwbruno/git-basics.git',
+ 						description: "clone this resposiory via https in a directory git-basics"
+ 					},
+ 					{
+ 						command: 'git clone https://github.com/wwwbruno/git-basics.git new-directory',
+ 						description: "clone this resposiory via https in a directory new-directory"
+ 					},
+ 				]
+ 			},
  		];
 	});
 
