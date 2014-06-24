@@ -12,7 +12,7 @@
  			{
  				title: 'Help',
  				description: 'Get help for git commands',
- 				command: 'git help [command]',
+ 				command: 'git help',
  				commands: [
  					{
  						command: 'git help',
@@ -44,7 +44,7 @@
  			{
  				title: 'Diff',
  				description: 'Show the diff between files',
- 				command: 'git diff [--options]',
+ 				command: 'git diff',
  				commands: [
  					{
  						command: 'git diff',
@@ -64,7 +64,7 @@
  			{
  				title: 'Reset',
  				description: 'Remove files from stage / undo changes / undo commits',
- 				command: 'git reset [--options]',
+ 				command: 'git reset',
  				commands: [
  					{
  						command: 'git reset file_name',
@@ -141,6 +141,18 @@
  				title: 'Pull',
  				description: 'Get commits and branches from remote repository',
  				command: 'git pull',
+ 			},
+ 			// git branch
+ 			{
+ 				title: 'Branch',
+ 				description: 'Create and list branches',
+ 				command: 'git branch',
+ 				commands: [
+ 					{
+ 						command: 'git branch --list',
+ 						description: "list all branches"
+ 					},
+ 				]
  			},
  		];
 	});
