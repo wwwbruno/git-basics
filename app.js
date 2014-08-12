@@ -12,7 +12,7 @@
  			{
  				title: 'Help',
  				description: 'Get help for git commands',
- 				command: 'git help [command]',
+ 				command: 'git help',
  				commands: [
  					{
  						command: 'git help',
@@ -44,7 +44,7 @@
  			{
  				title: 'Diff',
  				description: 'Show the diff between files',
- 				command: 'git diff [--options]',
+ 				command: 'git diff',
  				commands: [
  					{
  						command: 'git diff',
@@ -64,7 +64,7 @@
  			{
  				title: 'Reset',
  				description: 'Remove files from stage / undo changes / undo commits',
- 				command: 'git reset [--options]',
+ 				command: 'git reset',
  				commands: [
  					{
  						command: 'git reset file_name',
@@ -114,6 +114,10 @@
  						command: 'git checkout branch_name',
  						description: "switch to branch"
  					},
+ 					{
+ 						command: 'git checkout -b new-branch',
+ 						description: "create and switch to new-branch"
+ 					},
  				]
  			},
  			// git push
@@ -142,7 +146,7 @@
  				description: 'Get commits and branches from remote repository',
  				command: 'git pull',
  			},
- 			// git help
+ 			// git ammend
  			{
  				title: 'Amend',
  				description: 'Add stage files to the last commit',
@@ -156,6 +160,50 @@
  						command: "git --amend -m 'New commit message'",
  						description: 'add stage files to the last commit and change the message'
  					}
+ 				]
+ 			},
+ 			// git branch
+ 			{
+ 				title: 'Branch',
+ 				description: 'Create, list and delete branches',
+ 				command: 'git branch',
+ 				commands: [
+ 					{
+ 						command: 'git branch --list',
+ 						description: "list all branches"
+ 					},
+ 					{
+ 						command: 'git branch new-branch',
+ 						description: "create a branch named new-branch"
+ 					},
+ 					{
+ 						command: 'git branch -d new-branch',
+ 						description: "delete the new-branch"
+ 					},
+ 				]
+ 			},
+ 			// git clone
+ 			{
+ 				title: 'Clone',
+ 				description: 'Clone a remote repository',
+ 				command: 'git clone',
+ 				commands: [
+ 					{
+ 						command: 'git clone git@github.com:wwwbruno/git-basics.git',
+ 						description: "clone this resposiory via ssh in a directory git-basics (need ssh key configured)"
+ 					},
+ 					{
+ 						command: 'git clone git@github.com:wwwbruno/git-basics.git new-directory',
+ 						description: "clone this resposiory via ssh in a directory new-directory (need ssh key configured)"
+ 					},
+ 					{
+ 						command: 'git clone https://github.com/wwwbruno/git-basics.git',
+ 						description: "clone this resposiory via https in a directory git-basics"
+ 					},
+ 					{
+ 						command: 'git clone https://github.com/wwwbruno/git-basics.git new-directory',
+ 						description: "clone this resposiory via https in a directory new-directory"
+ 					},
  				]
  			},
  		];
