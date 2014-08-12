@@ -142,6 +142,22 @@
  				description: 'Get commits and branches from remote repository',
  				command: 'git pull',
  			},
+ 			// git help
+ 			{
+ 				title: 'Amend',
+ 				description: 'Add stage files to the last commit',
+ 				command: 'git --amend',
+ 				commands: [
+ 					{
+ 						command: 'git --amend',
+ 						description: 'add stage files to the last commit and keep the message'
+ 					},
+ 					{
+ 						command: "git --amend -m 'New commit message'",
+ 						description: 'add stage files to the last commit and change the message'
+ 					}
+ 				]
+ 			},
  		];
 	});
 
